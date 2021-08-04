@@ -2,19 +2,23 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	font-family: Helvetica, "Times New Roman";
 }
 
-.row {
-	position: absolute;
-	width: 100%;
-	margin-left: 5px;
-	margin-right: 5px;
+
+#row {
+	margin-left: 10px;
+	margin-right: 10px;
 }
+
 
 section {
 	position: relative;
 	background-color: #C0C0C0;
 	border: 2px solid black;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
 }
 
 h1 {
@@ -25,37 +29,49 @@ h1 {
 
 h2 {
 	position: absolute;
-	border: 1px solid black;
 	text-align: center;
 	right: 0px;
-	padding: 0px 20px 0px 20px;
-	width: 35%;
+	top: 0px;
+	width: 150px;
+	padding-top: 0px;
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-bottom: 0px;
 }
 
 #chicken {
 	background-color: #ff9966;
+	border-left: 2px solid black;
+	border-bottom: 2px solid black;
 }
 
 #beef {
 	background-color: #ff3333;
 	color: white;
+	border-left: 2px solid black;
+	border-bottom: 2px solid black
 }
 
 #sushi {
 	background-color: #ffcc66;
+	border-left: 2px solid black;
+	border-bottom: 2px solid black
 }
 
+
 p {
-	padding: 5px 2px 5px 2px;
-	border: 2px solid black;
-	margin: 30px 10px 10px 10px;
+	padding-top: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px
 }
+
 
 /*Breakpoints for desktop */
 @media (min-width: 992px) {
 	.col-lg-3 {
 		float: left;
-		width: 33%;
+		width: 33.33%;
 	}
 }
 
@@ -63,19 +79,18 @@ p {
 @media (min-width: 768px) and (max-width: 991px){
 	.col-md-2 {
 		float: left;
-		width: 49.5%;
+		width: 50%;
 	}
 	.col-md-1 {
 		float: left;
-		width: 99.2%;
+		width: 100%;
 	}
 }
 
 /*Breakpoints for mobile */
 @media (max-width: 767px) {
-	section {
+	.col-sm-1 {
 		float: left;
 		width: 100%;
 	}
-
 }
